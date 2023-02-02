@@ -67,10 +67,10 @@ public class GamePanel extends JPanel implements ActionListener {
     public void draw (Graphics g){
         if(running) {
             //Grid for guidance while making the game, can be deleted or hiden
-            for (int i = 0; i < SCREEN_HEIGHT / CELL_SIZE; i++) {
+            /*for (int i = 0; i < SCREEN_HEIGHT / CELL_SIZE; i++) {
                 g.drawLine(i * CELL_SIZE, 0, i * CELL_SIZE, SCREEN_HEIGHT);
                 g.drawLine(0, i * CELL_SIZE, SCREEN_WIDTH, i * CELL_SIZE);
-            }
+            }*/
             //Drawing apple process
             g.setColor(Color.RED);
             g.fillOval(appleX, appleY, CELL_SIZE, CELL_SIZE);
